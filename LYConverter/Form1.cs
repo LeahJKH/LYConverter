@@ -20,15 +20,18 @@ namespace LYConverter
         private void button1_Click(object sender, EventArgs e)
         {
             startBtn.Text = "start";
-            Form2 form2 = new Form2().show();
-        }
+			this.Hide();
+            Converter form2 = new Converter();
+			form2.FormClosed += (s, args) => this.Close();
+			form2.Show();
+		}
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void welcomeText_Click(object sender, EventArgs e)
         {
 
         }

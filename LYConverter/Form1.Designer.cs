@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.startBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.welcomeText = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // startBtn
@@ -42,22 +42,23 @@
             this.startBtn.UseVisualStyleBackColor = true;
             this.startBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // welcomeText
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Welcome too my converter :3";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.welcomeText.AutoSize = true;
+            this.welcomeText.Location = new System.Drawing.Point(12, 9);
+            this.welcomeText.Name = "welcomeText";
+            this.welcomeText.Size = new System.Drawing.Size(146, 13);
+            this.welcomeText.TabIndex = 1;
+            this.welcomeText.Text = "Welcome too my converter :3";
+            this.welcomeText.Click += new System.EventHandler(this.welcomeText_Click);
+            
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.welcomeText);
             this.Controls.Add(this.startBtn);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -69,7 +70,7 @@
         #endregion
 
         private System.Windows.Forms.Button startBtn;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label welcomeText;
     }
 }
 
